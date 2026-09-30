@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devlog — Yavuz Yunusoğlu</title>
+  <meta name="description" content="Short development notes from Yavuz Yunusoğlu.">
+  <meta name="theme-color" content="#f2841a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("yavuz-theme"); } catch (e) {}
+      if (t !== "day" && t !== "night") t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "night" : "day";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="devlog">
+  <a class="skip" href="#main" data-t="skipLink"></a>
+
+  <div class="ribbon" data-ribbon></div>
+  <header class="site-header" data-header></header>
+
+  <main id="main">
+    <div class="wrap" data-devlog></div>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="data/profile.js"></script>
+  <script src="data/content.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/devlog.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/devlog.js"></script>
+</body>
+</html>

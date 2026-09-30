@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yavuz Yunusoğlu — Game Design</title>
+  <meta name="description" content="Portfolio of Yavuz Yunusoğlu, a game design student and developer from Türkiye. Games, jams, Unturned plugins and tools.">
+  <meta name="theme-color" content="#f2841a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yavuz Yunusoğlu — Game Design">
+  <meta property="og:description" content="Games, jams, plugins and tools by a game design student from Muğla.">
+  <meta property="og:image" content="assets/img/polywar/3.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/rubik-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("yavuz-theme"); } catch (e) {}
+      if (t !== "day" && t !== "night") t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "night" : "day";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main" data-t="skipLink"></a>
+
+  <div class="ribbon" data-ribbon></div>
+  <header class="site-header" data-header></header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="hero-kicker mono" data-t="hero.kicker"></p>
+          <h1><span data-first></span> <span class="last" data-last></span></h1>
+          <p class="hero-intro" data-intro></p>
+          <div class="hero-cta" data-cta></div>
+          <div class="hero-facts" data-facts></div>
+        </div>
+
+        <div class="code3d" data-code3d aria-hidden="true">
+          <div class="code3d-stage"><div class="code3d-obj"></div></div>
+          <div class="code3d-shadow"></div>
+        </div>
+      </div>
+
+      <div class="ticker" aria-hidden="true"><div class="ticker-track" data-ticker></div></div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="num mono" data-t="work.number"></span>
+            <h2 data-t="work.title"></h2>
+            <p data-t="work.text"></p>
+          </div>
+        </div>
+        <div data-featured></div>
+        <div class="filters" role="group" data-t-aria="work.filterLabel" data-filters></div>
+        <div class="grid" data-grid></div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="pines" aria-hidden="true"></div></div>
+
+    <!-- Jams & events -->
+    <section class="section" id="jams">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="num mono" data-t="jams.number"></span>
+            <h2 data-t="jams.title"></h2>
+            <p data-t="jams.text"></p>
+          </div>
+        </div>
+        <div class="passport reveal" data-passport></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="reveal">
+          <div class="section-head">
+            <div>
+              <span class="num mono" data-t="about.number"></span>
+              <h2 data-t="about.title"></h2>
+            </div>
+          </div>
+          <div class="about-text" data-about></div>
+        </div>
+        <aside class="toolbox reveal" data-toolbox></aside>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="section" id="certificates">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="num mono" data-t="certificates.number"></span>
+            <h2 data-t="certificates.title"></h2>
+          </div>
+        </div>
+        <div class="certs reveal" data-certs></div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section" id="downloads">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="num mono" data-t="downloads.number"></span>
+            <h2 data-t="downloads.title"></h2>
+            <p data-t="downloads.text"></p>
+          </div>
+        </div>
+        <div class="downloads reveal" data-downloads></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact reveal" data-contact></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <script src="data/profile.js"></script>
+  <script src="data/content.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/events.js"></script>
+  <script src="data/downloads.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
